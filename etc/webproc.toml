@@ -1,0 +1,20 @@
+ProgramArgs = ["dnsmasq", "--no-daemon"]
+
+Host = "0.0.0.0"
+
+Port = 8080
+
+User = ""
+Pass = ""
+
+AllowedIPs = []
+
+Log = "both"
+
+OnExit = "restart"
+
+OnSave = "restart"
+
+ConfigurationFiles = ["/etc/dnsmasq.conf", "/etc/dnsmasq.d/blocked.hosts", "/etc/dnsmasq.d/known.hosts"]
+
+RestartTimeout = "30s"
